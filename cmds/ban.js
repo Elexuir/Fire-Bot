@@ -4,6 +4,7 @@ module.exports = {
   description: 'Bans a user.',
   
   slash: 'both',
+  testOnly: false,
   
   permissions: ['ADMINISTRATOR'],
   guildOnly: true,
