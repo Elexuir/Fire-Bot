@@ -29,6 +29,8 @@ module.exports = {
     
     target.ban({ reason, days: 7 })
     
+    message.author.send(`<@${target.id}>`)
+    
     return `<@${target.id}> was Banned.`
   }
 }
