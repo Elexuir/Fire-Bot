@@ -23,7 +23,7 @@ module.exports = {
   testOnly: false,
   guildOnly: false,
   
-  slash: false,
+  slash: true,
   
   options: [],
   

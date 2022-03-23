@@ -37,8 +37,6 @@ client.on('ready', () => {
 		featuresDir: path.join(__dirname, 'features'),
 
 	})
-	  .setDefaultPrefix('-'),
-	
 		.setCategorySettings([
 			{
 				name: 'Miscellaneous',
