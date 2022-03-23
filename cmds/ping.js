@@ -9,6 +9,6 @@ module.exports = {
   expectedArgs: '<user>',
   
   callback: () => {
-   return '@<user>'
+    return '<@user>'
   }
 }
