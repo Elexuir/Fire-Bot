@@ -1,6 +1,6 @@
 module.exports = {
   name: 'reply',
-  category: 'Bot-Related',
+  category: 'help',
   description: 'Reply\'s to a message.',
   
   options: [

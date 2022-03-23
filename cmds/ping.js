@@ -1,7 +1,7 @@
 module.exports = {
   name: 'ping',
   description: 'Says Pong!',
-  category: 'Bot-Related',
+  category: 'help',
   
   slash: 'both',
   testOnly: false,

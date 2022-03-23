@@ -1,6 +1,6 @@
 module.exports = {
   name: 'help',
-  category: 'Bot-Related',
+  category: 'help',
   description: 'Help Menu',
   
   slash: 'both',
