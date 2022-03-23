@@ -37,8 +37,6 @@ module.exports = {
     
     target.kick(reason)
     
-    message.author.send(`You have Kicked <@${target.id}>`)
-    
     return {
       cusom: true,
       content: `<@${target.id}> was Kicked.`,
