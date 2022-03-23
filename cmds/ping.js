@@ -2,8 +2,8 @@ module.exports = {
   name: 'ping',
   description: 'Says Pong!',
   
-  slash: true,
-  testOnly: false,
+  slash: 'both',
+  testOnly: true,
   
   callback: () => {
    return {
