@@ -17,11 +17,19 @@ module.exports = {
     const target = message ? message.mentions.members?.first() : interaction.options.getMember('user')
     
     if(!target) {
-      return 'The was not user found.'
+      return {
+        custom: true,
+        content: 'The was not user found.',
+        ephemeral: true
+      }
     }
     
     if(!target.kickable) {
-      return 'The user that was entered cannot be kicked.'
+      return {
+        custom: true,
+        content: 'The user that was entered cannot be kicked.',
+        ephemeral: true
+      }
     }
     
     args.shift()
@@ -29,6 +37,10 @@ module.exports = {
     
     target.kick(reason)
     
-    return `<@${target.id}> was Kicked.`
+    return {
+      cusom: true,
+      content: `<@${target.id}> was Banned.`,
+      ephemeral: true
+    }
   }
 }
