@@ -1,6 +1,6 @@
 module.exports = {
   category: 'help',
-  descript: 'Eval Command.',
+  description: 'Eval Command.',
   
   expectedArgs: '<code>',
   minArgs: 1,
