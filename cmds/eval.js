@@ -7,6 +7,8 @@ module.exports = {
   maxArgs: 1,
   syntaxError: 'Eval Operation Failed',
   
+  slash: 'both',
+  
   callback: ({ text }) => {
     const Eval = eval(text)
     
