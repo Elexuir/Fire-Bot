@@ -3,6 +3,15 @@ module.exports = {
   category: 'Bot-Related',
   description: 'Reply\'s to a message.',
   
+  options: [
+    {
+      name: 'message',
+      description: 'The message you would like to send.',
+      required: true,
+      type: 'STRING'
+    }
+    ],
+  
   expectedArgs: '<message>',
   
   minArgs: 0,
@@ -23,8 +32,6 @@ module.exports = {
   guildOnly: false,
   
   slash: true,
-  
-  options: [],
   
   error: ({
     error,
