@@ -1,13 +1,13 @@
 module.exports = (client) => {
   const statusOptions = [
         `currently in ${client.guilds.cache.size} servers`,
-        'status 2,
+        'status 2',
         'status 3'
     ];
   let counter = 0;
 
   const updateStatus = () => {
-    client.user ? .setPresence({
+    client.user?.setPresence({
       status: 'online',
       activities: [
         {
