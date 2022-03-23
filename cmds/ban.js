@@ -28,7 +28,5 @@ module.exports = {
     target.ban({ reason, days: 7 })
     
     message.author.send('You have successfully banned a user.')
-    
-    return `You have kicked the user: <@${target.id}>`
   }
 }

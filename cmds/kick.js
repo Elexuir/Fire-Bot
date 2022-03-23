@@ -28,7 +28,5 @@ module.exports = {
     target.kick(reason)
     
     message.author.send('You have successfully kicked a user.')
-    
-    return `You have kicked the user: <@${target.id}>`
   }
 }

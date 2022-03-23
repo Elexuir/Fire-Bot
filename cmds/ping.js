@@ -6,7 +6,9 @@ module.exports = {
   slash: 'both',
   testOnly: false,
   
+  expectedArgs: '<user>',
+  
   callback: () => {
-   return 'Pong!'
+   return '@<user>'
   }
 }
