@@ -3,7 +3,7 @@ module.exports = {
   description: 'Says Pong!',
   
   slash: 'both',
-  testOnly: true,
+  testOnly: false,
   
   callback: () => {
    return {
