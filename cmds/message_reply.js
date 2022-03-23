@@ -15,7 +15,7 @@ module.exports = {
   permissions: ['ADMINISTRATOR'],
   
   cooldown: '60s',
-  globalCooldown: '3m',
+  globalCooldown: '2m',
   
   hidden: false,
   ownerOnly: false,
