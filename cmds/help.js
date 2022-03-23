@@ -7,6 +7,6 @@ module.exports = {
   testOnly: false,
   
   callback: () => {
-    return '1. \`/reply <message>\` - sends a message\n2. \`/ping\` - returns Pong!'
+    return '1. \`/reply <message>\` - sends a message\n2. \`/kick <user> <reason>/\` - Kicks the tagged user.\n3. \`/ban <user> <reason>\` - Bans the tagged user.'
   }
 }
