@@ -1,8 +1,6 @@
 module.exports = (client) => {
   const statusOptions = [
-        `currently in ${client.guilds.cache.size} servers`,
-        'status 2',
-        'status 3'
+        'Version Beta 1.2'
     ];
   let counter = 0;
 
