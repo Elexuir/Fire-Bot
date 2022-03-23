@@ -9,6 +9,7 @@ module.exports = {
   permissions: ['ADMINISTRATOR'],
   guildOnly: true,
   
+  minArgs: 2,
   expectedArgs: '<user> <reason>',
   expectedArgsTypes: ['USER', 'STRING'],
   callback: ({ message, interaction, args }) => {
@@ -18,7 +19,7 @@ module.exports = {
       return 'The user you were trying to kick was not found.'
     }
     
-    if(!target.kickable()) {
+    if(!target.kickable) {
       return 'The user is not kickable.'
     }
     
