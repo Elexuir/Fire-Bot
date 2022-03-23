@@ -1,6 +1,7 @@
 module.exports = (client) => {
   const statusOptions = [
-        'Version Beta 1.2'
+        'Version Beta 1.2',
+        'Almost Beta 1.3'
     ];
   let counter = 0;
 
