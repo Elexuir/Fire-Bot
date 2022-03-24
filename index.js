@@ -55,7 +55,7 @@ client.on('ready', () => {
 		]);
 });
 
-client.on('guildMemberAdd', (member, client) => {
+client.on('guildMemberAdd', (member) => {
   if(member.guild.id == '912890409934524438') {
     member.roles.add('942628834631630859')
   }
