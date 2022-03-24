@@ -55,10 +55,12 @@ client.on('ready', () => {
 		]);
 });
 
-client.on('guildMemberAdd', (member) => {
+client.on('guildMemberAdd', (member, client) => {
   if(member.guild.id == '912890409934524438') {
     member.roles.add('942628834631630859')
   }
+  
+  client.channels.get('956378725811879978').send('Welcome!')
 })
 
 client.login(process.env.TOKEN)
