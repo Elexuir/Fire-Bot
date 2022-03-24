@@ -17,19 +17,19 @@ module.exports = {
     const target = message ? message.mentions.members?.first() : interaction.options.getMember('user')
     
     if(!target) {
-      return {
+      return interaction.reply({
         custom: true,
         content: 'The was not user found.',
         ephemeral: true
-      }
+      })
     }
     
     if(!target.bannable) {
-      return {
+      return interaction.reply({
         custom: true,
         content: 'The user that was entered cannot be banned.',
         ephemeral: true
-      }
+      })
     }
     
     args.shift()
@@ -37,10 +37,10 @@ module.exports = {
     
     target.ban({ reason, days: 7 })
     
-    return {
+    return interaction.reply({
       custom: true,
       content: `<@${target.id}> was Banned.`,
       ephemeral: true
-    }
+    })
   }
 }
