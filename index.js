@@ -60,7 +60,7 @@ client.on('guildMemberAdd', (member) => {
     member.roles.add('942628834631630859')
   }
   
-  client.channels.get('956378725811879978').send('Welcome!')
+  client.channels.cache.get('956378725811879978').send('Welcome!')
 })
 
 client.login(process.env.TOKEN)
