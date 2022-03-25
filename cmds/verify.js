@@ -10,7 +10,7 @@ module.exports = {
     name: 'user',
     description: 'Tag a user.',
     required: true,
-    type: 'MEMBER'
+    type: 'USER'
   }],
   
   callback: ({ interaction }) => {
