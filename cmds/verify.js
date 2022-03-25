@@ -4,6 +4,7 @@ module.exports = {
   
   slash: 'both',
   testOnly: false,
+  permissions: ['ADMINISTRATOR'],
   
   minArgs: 1,
   expectedArgs: '<user>',
