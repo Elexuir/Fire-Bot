@@ -14,7 +14,6 @@ module.exports = {
     
     if(interaction.guild.id != '956389530364162101') {
       return interaction.reply({
-        custom: true,
         content: 'You cannot use this command in this server.',
         ephemeral: true
       })
@@ -23,7 +22,6 @@ module.exports = {
     target.roles.add('956962605497466910')
     
     return interaction.reply({
-      custom: true,
       content: `<@${target.id}> has been Verified!`,
       ephemeral: true
     })
