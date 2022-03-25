@@ -6,9 +6,12 @@ module.exports = {
   testOnly: false,
   permissions: ['ADMINISTRATOR'],
   
-  minArgs: 1,
-  expectedArgs: '<user>',
-  expectedArgsType: ['MEMBER'],
+  options: [{
+    name: 'user',
+    description: 'Tag a user.',
+    required: true,
+    type: 'MEMBER'
+  }],
   
   callback: ({ interaction }) => {
     const target = interaction.options.getMember('user')
