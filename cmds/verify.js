@@ -4,13 +4,14 @@ module.exports = {
   
   slash: 'both',
   testOnly: false,
+  guildOnly: false,
   permissions: ['ADMINISTRATOR'],
   
   options: [{
     name: 'user',
-    description: 'Tag a user.',
+    description: 'user',
     required: true,
-    type: 'USER'
+    type: 'MEMBER'
   }],
   
   callback: ({ interaction }) => {
