@@ -18,7 +18,6 @@ module.exports = {
     
     if(!target) {
       return interaction.reply({
-        custom: true,
         content: 'The was not user found.',
         ephemeral: true
       })
@@ -26,7 +25,6 @@ module.exports = {
     
     if(!target.bannable) {
       return interaction.reply({
-        custom: true,
         content: 'The user that was entered cannot be banned.',
         ephemeral: true
       })

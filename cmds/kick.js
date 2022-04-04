@@ -26,7 +26,6 @@ module.exports = {
     
     if(!target.kickable) {
       return interaction.reply({
-        custom: true,
         content: 'The user that was entered cannot be kicked.',
         ephemeral: true
       })
@@ -38,7 +37,6 @@ module.exports = {
     target.kick(reason)
     
     return interaction.reply({
-      cusom: true,
       content: `<@${target.id}> was Kicked.`,
       ephemeral: true
     })
