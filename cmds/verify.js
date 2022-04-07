@@ -24,7 +24,7 @@ module.exports = {
       })
     }
     
-    target.roles.add('956962605497466910')
+    target.roles.cache.add('956962605497466910')
     
     return interaction.reply({
       content: `<@${target.id}> has been Verified!`,
