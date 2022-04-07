@@ -57,12 +57,12 @@ client.on('ready', () => {
 
 client.on('guildMemberAdd', (member) => {
   if(member.guild.id == '912890409934524438') {
-    member.roles.cache.add('942628834631630859')
+    member.roles.add('942628834631630859')
     client.channels.cache.get('956378725811879978').send('Welcome to, Fire Wolf Academy!')
   }
   
   if(member.guild.id == '956389530364162101') {
-    member.roles.cache.add('956953473058996315')
+    member.roles.add('956953473058996315')
     client.channes.cache.get('956941811123888188').send('Welcome to the Bot Testing Server!')
   }
 })
