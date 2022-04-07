@@ -11,7 +11,7 @@ module.exports = {
     name: 'user',
     description: 'user',
     required: true,
-    type: 'MEMBER'
+    type: 'USER'
   }],
   
   callback: ({ interaction }) => {
